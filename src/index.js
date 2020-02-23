@@ -3,10 +3,9 @@
  *
  * @param {string} target
  * @returns {string}
+ * @throws {TypeError}
  */
 module.exports = function(target) {
 
-  const targetString = target.toString()
-
-  return targetString.replace(/\D/g, '')
+  return String(target).replace(/\D/g, '')
 }
