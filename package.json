@@ -1,14 +1,17 @@
 {
   "name": "@lacussoft/num-only",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function to stringify and remove non-numeric characters of items.",
   "author": "Julio L. Muller",
   "license": "MIT",
   "keywords": [
     "lacussoft",
-    "remove strings",
-    "remove nan",
-    "extract numbers"
+    "strip",
+    "remove",
+    "extract",
+    "numbers",
+    "only",
+    "strings"
   ],
   "repository": {
     "type": "git",
@@ -18,12 +21,13 @@
     "url": "https://github.com/lacussoft/num-only/issues"
   },
   "homepage": "https://github.com/lacussoft/num-only#readme",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "parcel build src/index.js --target node",
-    "test": "node ./test"
+    "build": "parcel build src/dist.js -o num-only.js --no-minify && parcel build src/dist.js -o num-only.min.js",
+    "test": "jest"
   },
   "devDependencies": {
+    "jest": "25.*",
     "parcel-bundler": "1.*"
   }
 }
