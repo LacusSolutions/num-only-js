@@ -1,0 +1,1 @@
+window.numOnly = require('./index')
