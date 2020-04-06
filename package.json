@@ -1,6 +1,6 @@
 {
   "name": "@lacussoft/num-only",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Function to stringify and remove non-numeric characters of items.",
   "author": "Julio L. Muller",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "25.*",
-    "parcel-bundler": "1.*"
+    "jest": "^25.2.7",
+    "parcel-bundler": "^1.12.4"
   }
 }
