@@ -15,19 +15,31 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacussoft/num-only.git"
+    "url": "git+https://github.com/juliolmuller/num-only.git"
   },
   "bugs": {
-    "url": "https://github.com/lacussoft/num-only/issues"
+    "url": "https://github.com/juliolmuller/num-only/issues"
   },
-  "homepage": "https://github.com/lacussoft/num-only#readme",
-  "main": "src/index.js",
+  "homepage": "https://github.com/juliolmuller/num-only#readme",
+  "typings": "build/types.d.ts",
+  "main": "build/index.js",
   "scripts": {
-    "build": "parcel build src/dist.js -o num-only.js --no-minify && parcel build src/dist.js -o num-only.min.js",
+    "build:browser": "rm -rf dist/ && webpack --mode=production",
+    "build:node": "rm -rf build/ && babel src/ --out-dir build/ && cp src/*.d.ts build/",
+    "build": "npm run build:browser && npm run build:node",
+    "lint": "eslint --fix src/**/*.js",
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^25.5.4",
-    "parcel-bundler": "^1.12.4"
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@lacussoft/eslint-config": "^1.0.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.15.0",
+    "jest": "^26.6.3",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
   }
 }
