@@ -22,7 +22,7 @@ $ npm install @lacussoft/num-only
 import numOnly from '@lacussoft/num-only'
 
 // Common JS
-const numOnly = require('@lacussoft/num-only')
+const numOnly = require('@lacussoft/num-only').default
 ```
 
 or import it through your HTML file, using CDN:
