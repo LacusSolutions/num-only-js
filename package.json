@@ -1,6 +1,6 @@
 {
   "name": "@lacussoft/num-only",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Function to stringify and remove non-numeric characters of items.",
   "author": "Julio L. Muller",
   "license": "MIT",
@@ -34,11 +34,11 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@lacussoft/eslint-config": "^1.0.0",
+    "@lacussoft/eslint-config": "^1.0.1",
     "babel-loader": "^8.2.2",
-    "eslint": "^7.15.0",
+    "eslint": "^7.17.0",
     "jest": "^26.6.3",
-    "webpack": "^5.10.3",
-    "webpack-cli": "^4.2.0"
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1"
   }
 }
