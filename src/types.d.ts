@@ -1,5 +1,4 @@
 
-export type NumOnlyFunction = (input: any) => string
+import numOnly from './index';
 
-export const numOnly: NumOnlyFunction
-export default numOnly
+export default numOnly;
