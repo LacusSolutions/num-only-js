@@ -3,7 +3,7 @@
 ![NPM Latest Version](https://img.shields.io/npm/v/@lacussoft/num-only)
 ![Downloads Count](https://img.shields.io/npm/dm/@lacussoft/num-only.svg)
 ![Bundle Size](https://packagephobia.now.sh/badge?p=@lacussoft/num-only)
-![Test Status](https://img.shields.io/travis/juliolmuller/num-only-js/master.svg)
+![Test Status](https://img.shields.io/travis/juliolmuller/num-only-js/main.svg)
 ![Last Update Date](https://img.shields.io/github/last-commit/juliolmuller/num-only-js)
 ![Project License](https://img.shields.io/github/license/juliolmuller/num-only-js)
 
