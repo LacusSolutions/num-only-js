@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juliolmuller/num-only.git"
+    "url": "git+https://github.com/juliolmuller/num-only-js.git"
   },
   "bugs": {
-    "url": "https://github.com/juliolmuller/num-only/issues"
+    "url": "https://github.com/juliolmuller/num-only-js/issues"
   },
-  "homepage": "https://github.com/juliolmuller/num-only#readme",
+  "homepage": "https://github.com/juliolmuller/num-only-js#readme",
   "typings": "build/types.d.ts",
   "main": "build/index.js",
   "scripts": {
