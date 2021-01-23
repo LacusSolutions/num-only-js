@@ -1,6 +1,7 @@
+/* eslint-env node */
+const numOnly = require('./num-only').default;
 
-const numOnly = (target) => {
-  return String(target).replace(/\D/g, '');
-};
+module.exports = numOnly;
 
-export default numOnly;
+// Allow use of default import with ES module syntax
+module.exports.default = numOnly;

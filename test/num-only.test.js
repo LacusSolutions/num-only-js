@@ -1,4 +1,4 @@
-const numOnly = require('../src').default;
+const numOnly = require('../src');
 
 test('Arg "Testing with string" returns empty', () => {
   expect(numOnly('Testing with string')).toBe('');
