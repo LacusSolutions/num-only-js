@@ -9,6 +9,12 @@
 
 Node package with a function to stringify and remove non-numeric characters of items.
 
+## Browser Support
+
+![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
+--- | --- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
+
 ## Installation
 
 ```bash
@@ -22,7 +28,7 @@ $ npm install @lacussoft/num-only
 import numOnly from '@lacussoft/num-only'
 
 // Common JS
-const numOnly = require('@lacussoft/num-only').default
+const numOnly = require('@lacussoft/num-only')
 ```
 
 or import it through your HTML file, using CDN:
