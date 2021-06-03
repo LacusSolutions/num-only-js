@@ -5,7 +5,7 @@
     "jest": true
   },
   "extends": [
-    "@lacussoft"
+    "lacussoft"
   ],
   "ignorePatterns": [
     "build/",
