@@ -1,8 +1,8 @@
-# LacusSoft :: num-only
+# num-only
 
-![NPM Latest Version](https://img.shields.io/npm/v/@lacussoft/num-only)
-![Downloads Count](https://img.shields.io/npm/dm/@lacussoft/num-only.svg)
-![Bundle Size](https://packagephobia.now.sh/badge?p=@lacussoft/num-only)
+![NPM Latest Version](https://img.shields.io/npm/v/num-only)
+![Downloads Count](https://img.shields.io/npm/dm/num-only.svg)
+![Bundle Size](https://packagephobia.now.sh/badge?p=num-only)
 ![Test Status](https://img.shields.io/travis/juliolmuller/num-only-js/main.svg)
 ![Last Update Date](https://img.shields.io/github/last-commit/juliolmuller/num-only-js)
 ![Project License](https://img.shields.io/github/license/juliolmuller/num-only-js)
@@ -18,23 +18,23 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 ## Installation
 
 ```bash
-$ npm install @lacussoft/num-only
+$ npm install num-only
 ```
 
 ## Import
 
 ```js
 // ES Modules
-import numOnly from '@lacussoft/num-only'
+import numOnly from 'num-only'
 
 // Common JS
-const numOnly = require('@lacussoft/num-only')
+const numOnly = require('num-only')
 ```
 
 or import it through your HTML file, using CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@lacussoft/num-only@latest/dist/num-only.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/num-only@latest/dist/num-only.min.js"></script>
 ```
 
 ## Usage

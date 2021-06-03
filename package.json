@@ -1,11 +1,10 @@
 {
-  "name": "@lacussoft/num-only",
-  "version": "1.0.9",
+  "name": "num-only",
+  "version": "1.0.0",
   "description": "Function to stringify and remove non-numeric characters of items.",
   "author": "Julio L. Muller",
   "license": "MIT",
   "keywords": [
-    "lacussoft",
     "strip",
     "remove",
     "extract",
