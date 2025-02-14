@@ -1,9 +1,11 @@
-.DS_Store/
+.DS_Store
 .vscode/
-node_modules/
 src/
 test/
 
 **/.*
 **/*.log
 **/*.config.js
+
+package-lock.json
+tsconfig.json
