@@ -1,16 +1,19 @@
 {
   "name": "num-only",
-  "version": "1.1.1",
-  "description": "Function to stringify and remove non-numeric characters of items.",
+  "version": "1.2.0",
+  "description": "Utility function to remove non-numeric characters of input.",
   "author": "Julio L. Muller",
   "license": "MIT",
   "keywords": [
     "strip",
     "remove",
     "extract",
+    "escape",
     "numbers",
     "only",
-    "strings"
+    "strings",
+    "utility",
+    "utils"
   ],
   "repository": {
     "type": "git",
@@ -25,9 +28,9 @@
   "scripts": {
     "build": "rollup --config",
     "lint": "eslint src/ --fix",
-    "pretest": "npm run build",
+    "pretest": "bun run build",
     "test": "jest",
-    "prepublish": "npm test"
+    "prepublish": "bun run test"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
