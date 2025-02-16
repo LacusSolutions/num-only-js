@@ -78,17 +78,17 @@ export default defineConfig([
         banner: bundleBanner,
       },
     ],
-    external: [
-      // ...Object.keys(packageMeta.dependencies || {}),
-      // ...Object.keys(packageMeta.devDependencies || {}),
-      // ...Object.keys(packageMeta.peerDependencies || {}),
-    ],
     plugins: [
       nodeResolvePlugin(),
       commonJsPlugin(),
       esBuildPlugin({
         target: 'esnext',
       }),
+    ],
+    external: [
+      ...Object.keys(packageMeta.dependencies || {}),
+      ...Object.keys(packageMeta.devDependencies || {}),
+      ...Object.keys(packageMeta.peerDependencies || {}),
     ],
   },
 
