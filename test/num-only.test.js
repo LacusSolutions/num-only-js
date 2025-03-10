@@ -1,3 +1,5 @@
+import { expect, test } from 'bun:test';
+
 import numOnly from '..';
 
 test('Arg "Testing with string" returns empty', () => {

@@ -1,3 +1,3 @@
 import jlmConfig from 'eslint-config-jlm';
 
-export default [...jlmConfig.sharedNodeAndBrowser, ...jlmConfig.jest];
+export default [...jlmConfig.sharedNodeAndBrowser];
