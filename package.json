@@ -1,6 +1,6 @@
 {
   "name": "num-only",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Utility function to remove non-numeric characters of input.",
   "author": "Julio L. Muller",
   "license": "MIT",
