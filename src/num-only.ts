@@ -1,6 +1,5 @@
-
-function numOnly(target: any) {
-  return String(target).replace(/\D/g, '')
+function numOnly(target: unknown) {
+  return String(target).replace(/\D/g, '');
 }
 
-export default numOnly
+export default numOnly;
