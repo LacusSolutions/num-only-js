@@ -32,7 +32,7 @@
     "lint": "eslint --fix src/ test/ eslint.config.mjs rollup.config.mjs",
     "pretest": "bun run build",
     "test": "bun test --coverage --coverage-reporter=lcov --coverage-dir=test/__coverage__",
-    "prepublish": "bun run test"
+    "prepublishOnly": "bun run test"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
