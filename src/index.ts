@@ -1,1 +1,1 @@
-export { default } from './num-only'
+export { default } from './num-only';
