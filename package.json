@@ -1,9 +1,12 @@
 {
   "name": "num-only",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Utility function to remove non-numeric characters of input.",
-  "author": "Julio L. Muller",
   "license": "MIT",
+  "author": {
+    "name": "Julio L. Muller",
+    "url": "https://github.com/juliolmuller"
+  },
   "keywords": [
     "strip",
     "remove",
@@ -46,8 +49,8 @@
     "@types/node": "^22.14.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.23.0",
-    "eslint-config-any": "^1.0.0",
+    "eslint": "^9.24.0",
+    "eslint-config-any": "^1.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
@@ -55,6 +58,6 @@
     "rollup-plugin-delete": "^3.0.1",
     "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-esbuild": "^6.2.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   }
 }
