@@ -29,7 +29,7 @@
   "main": "build/index.cjs.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "prepare": "husky",
+    "prepare": "husky || true",
     "commit": "git-cz",
     "build": "rollup --config",
     "lint": "eslint --fix src/ test/ eslint.config.mjs rollup.config.mjs",
