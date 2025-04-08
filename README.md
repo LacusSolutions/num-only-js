@@ -1,9 +1,9 @@
 # num-only
 
 ![NPM Latest Version](https://img.shields.io/npm/v/num-only)
+![Bundle Size](https://img.shields.io/bundlephobia/min/num-only?label=bundle%20size)
 ![Downloads Count](https://img.shields.io/npm/dm/num-only.svg)
-![Bundle Size](https://packagephobia.now.sh/badge?p=num-only)
-![Test Status](https://img.shields.io/travis/juliolmuller/num-only-js/main.svg)
+![Test Status](https://img.shields.io/github/actions/workflow/status/juliolmuller/num-only-js/release.yml?label=tests)
 ![Last Update Date](https://img.shields.io/github/last-commit/juliolmuller/num-only-js)
 ![Project License](https://img.shields.io/github/license/juliolmuller/num-only-js)
 
@@ -18,7 +18,11 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 ## Installation
 
 ```bash
+# using NPM
 $ npm install num-only
+
+# using Bun
+$ bun add num-only
 ```
 
 ## Import
