@@ -11,8 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
       - run: bun install --frozen-lockfile
 
   lint:
@@ -20,6 +18,7 @@ jobs:
     needs: install
     runs-on: ubuntu-latest
     steps:
+      - uses: oven-sh/setup-bun@v2
       - run: bun run type-check
       - run: bun run lint
 
@@ -28,6 +27,7 @@ jobs:
     needs: install
     runs-on: ubuntu-latest
     steps:
+      - uses: oven-sh/setup-bun@v2
       - run: bun run build
 
   test:
@@ -35,6 +35,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: oven-sh/setup-bun@v2
       - run: bun run test:ci
 
   publish:
@@ -42,6 +43,7 @@ jobs:
     needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
+      - uses: oven-sh/setup-bun@v2
       - run: bun publish --provenance --access public
         env:
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
