@@ -24,16 +24,12 @@ jobs:
     needs: [type-check, lint]
     runs-on: ubuntu-latest
     steps:
-    runs-on: ubuntu-latest
-    steps:
       - uses: ./.github/actions/setup
       - run: bun run test:ci
 
   publish:
     name: Publish to NPM
     needs: test
-    runs-on: ubuntu-latest
-    steps:
     runs-on: ubuntu-latest
     steps:
       - uses: ./.github/actions/setup
