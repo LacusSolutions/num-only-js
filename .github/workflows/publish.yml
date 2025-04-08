@@ -5,45 +5,38 @@ on:
     types: [created]
 
 jobs:
-  install:
-    name: Install Dependencies
+  type-check:
+    name: Check TypeScript
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun install --frozen-lockfile
+      - uses: ./.github/actions/setup
+      - run: bun run type-check
 
   lint:
     name: Lint Code
-    needs: install
     runs-on: ubuntu-latest
     steps:
-      - uses: oven-sh/setup-bun@v2
-      - run: bun run type-check
+      - uses: ./.github/actions/setup
       - run: bun run lint
-
-  build:
-    name: Build Package
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-      - uses: oven-sh/setup-bun@v2
-      - run: bun run build
 
   test:
     name: Run Tests
-    needs: build
+    needs: [type-check, lint]
     runs-on: ubuntu-latest
     steps:
-      - uses: oven-sh/setup-bun@v2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/setup
       - run: bun run test:ci
 
   publish:
     name: Publish to NPM
-    needs: [lint, test]
+    needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: oven-sh/setup-bun@v2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/setup
       - run: bun publish --provenance --access public
         env:
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
