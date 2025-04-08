@@ -5,7 +5,6 @@ description: 'Common setup steps: checkout, Bun, installation and build.'
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v4
     - uses: oven-sh/setup-bun@v2
       with:
         bun-version: latest
