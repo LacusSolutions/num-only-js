@@ -29,10 +29,10 @@
   "main": "build/index.cjs.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "prepare": "husky || true",
+    "prepare": "bun x husky",
     "commit": "git-cz",
     "build": "rollup --config",
-    "type-check": "tsx --noEmit",
+    "type-check": "tsc --noEmit",
     "lint": "eslint --fix src/ test/ eslint.config.mjs rollup.config.mjs",
     "pretest": "bun run build --silent",
     "test": "bun test --coverage --coverage-reporter=lcov --coverage-dir=test/__coverage__",
