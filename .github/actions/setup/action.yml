@@ -1,5 +1,7 @@
 name: Setup Project
 
+description: 'Common setup steps: checkout, Bun, installation and build.'
+
 runs:
   using: composite
   steps:
