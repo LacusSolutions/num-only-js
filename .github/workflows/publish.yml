@@ -6,6 +6,10 @@ on:
 
 env:
   HUSKY: 0
+  NODE_VERSION: 20
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # for `npm publish`
+  BUN_VERSION: latest
+  NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }} # for `bun publish`
 
 jobs:
   prepare-and-publish:
@@ -16,7 +20,11 @@ jobs:
       - name: Setup Bun.js
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: ${{ env.BUN_VERSION }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Dependencies
         run: bun install --frozen-lockfile
@@ -46,6 +54,3 @@ jobs:
 
       - name: Publish to NPM
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
