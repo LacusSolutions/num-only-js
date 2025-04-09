@@ -15,10 +15,7 @@ concurrency:
 env:
   HUSKY: 0
   NODE_VERSION: 20
-  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # for `npm publish`
   BUN_VERSION: latest
-  NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }} # for `bun publish`
-  NPM_REGISTRY_URL: https://registry.npmjs.org/
 
 jobs:
   type-check:
