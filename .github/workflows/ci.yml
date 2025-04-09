@@ -18,6 +18,7 @@ env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # for `npm publish`
   BUN_VERSION: latest
   NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }} # for `bun publish`
+  NPM_REGISTRY_URL: https://registry.npmjs.org/
 
 jobs:
   type-check:
@@ -52,9 +53,11 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: ${{ env.BUN_VERSION }}
+          registry-url: ${{ env.NPM_REGISTRY_URL }}
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+          registry-url: ${{ env.NPM_REGISTRY_URL }}
       - run: bun install --frozen-lockfile
       - run: bun run build
       - run: npm publish --dry-run --provenance --access public
