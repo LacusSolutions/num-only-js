@@ -64,13 +64,11 @@ export default defineConfig([
         file: 'build/index.cjs.js',
         format: 'cjs',
         sourcemap: 'inline',
-        banner: bundleBanner,
       },
       {
         file: 'build/index.esm.js',
         format: 'es',
         sourcemap: 'inline',
-        banner: bundleBanner,
       },
     ],
     plugins: [
