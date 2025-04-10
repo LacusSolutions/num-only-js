@@ -61,12 +61,12 @@ export default defineConfig([
     input: inputFileName,
     output: [
       {
-        file: 'build/index.cjs.js',
+        file: 'build/index.cjs',
         format: 'cjs',
         sourcemap: 'inline',
       },
       {
-        file: 'build/index.esm.js',
+        file: 'build/index.mjs',
         format: 'es',
         sourcemap: 'inline',
       },

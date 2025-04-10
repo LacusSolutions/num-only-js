@@ -26,7 +26,7 @@
     "url": "https://github.com/juliolmuller/num-only-js/issues"
   },
   "homepage": "https://github.com/juliolmuller/num-only-js#readme",
-  "main": "build/index.cjs.js",
+  "main": "build/index.cjs",
   "types": "build/index.d.ts",
   "scripts": {
     "prepare": "bun x husky",
