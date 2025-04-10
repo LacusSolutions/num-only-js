@@ -15,7 +15,7 @@ const inputFileName = 'src/index.ts';
 const bundleBanner = `/**
  * num-only v${packageMeta.version}
  *
- * @author ${packageMeta.author}.
+ * @author ${packageMeta.author.name}.
  * @license ${packageMeta.license} - 2020-${new Date().getFullYear()}
  */
 `;
