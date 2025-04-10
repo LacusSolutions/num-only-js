@@ -7,7 +7,7 @@
 ![Last Update Date](https://img.shields.io/github/last-commit/juliolmuller/num-only-js)
 ![Project License](https://img.shields.io/github/license/juliolmuller/num-only-js)
 
-Node package with a function to stringify and remove non-numeric characters of items.
+JavaScript package with a function to stringify and remove non-numeric characters of items.
 
 ## Browser Support
 
