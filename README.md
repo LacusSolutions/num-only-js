@@ -19,7 +19,7 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 
 ```bash
 # using NPM
-$ npm install num-only
+$ npm install --save num-only
 
 # using Bun
 $ bun add num-only
