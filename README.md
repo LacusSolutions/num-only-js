@@ -3,9 +3,9 @@
 ![NPM Latest Version](https://img.shields.io/npm/v/num-only)
 ![Bundle Size](https://img.shields.io/bundlephobia/min/num-only?label=bundle%20size)
 ![Downloads Count](https://img.shields.io/npm/dm/num-only.svg)
-![Test Status](https://img.shields.io/github/actions/workflow/status/juliolmuller/num-only-js/publish.yml?label=ci/cd)
-![Last Update Date](https://img.shields.io/github/last-commit/juliolmuller/num-only-js)
-![Project License](https://img.shields.io/github/license/juliolmuller/num-only-js)
+![Test Status](https://img.shields.io/github/actions/workflow/status/LacusSolutions/num-only-js/publish.yml?label=ci/cd)
+![Last Update Date](https://img.shields.io/github/last-commit/LacusSolutions/num-only-js)
+![Project License](https://img.shields.io/github/license/LacusSolutions/num-only-js)
 
 JavaScript package with a function to stringify and remove non-numeric characters of items.
 
