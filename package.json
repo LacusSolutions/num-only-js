@@ -30,6 +30,7 @@
   "types": "build/index.d.ts",
   "scripts": {
     "prepare": "bun x husky",
+    "commit": "commit",
     "build": "rollup --config",
     "type-check": "tsc --noEmit",
     "lint": "eslint --fix src/ test/ eslint.config.mjs rollup.config.mjs",
@@ -41,6 +42,7 @@
     "@babel/preset-env": "^7.28.3",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/prompt-cli": "^19.8.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
