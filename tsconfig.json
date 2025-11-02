@@ -15,7 +15,8 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "removeComments": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["bun"]
   },
   "include": [
     "src/",
