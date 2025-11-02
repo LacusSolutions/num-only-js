@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 
-import numOnly from '..';
+import numOnly from '../src';
 
 test('Arg "Testing with string" returns empty', () => {
   const result = numOnly('Testing with string');
