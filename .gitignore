@@ -3,5 +3,7 @@
 build/
 dist/
 node_modules/
+tmp/
 
 **/*.log
+**/*.tmp
